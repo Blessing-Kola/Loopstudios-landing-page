@@ -4,7 +4,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ## Table of contents
 
-- verview 
+- Overview 
 - The challenge
 - Screenshot
 - Links
@@ -30,9 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-- [screencapture-127-0-0-1-5500-2025-04-27-04_14_56.png]
-- [screencapture-127-0-0-1-5500-2025-04-27-04_17_07.png]
--[Capture.JPG]
+![screencapture-127-0-0-1-5500-2025-04-27-04_14_56.png](./screenshot.jpg)
+
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
 Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
@@ -75,12 +74,35 @@ I learnt the proper use of HTML and CSS for landing page. The core principles to
 
 I also learn problem solving is a skill that should not neglected because while I working on certain feature on the page, I ran into problem that I had to fix by having to read about some properties again and watch some online tutorial. A vivid example is the hamburger menu which  is shown in the navBar section of the header and the overlay.   
 
+<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+
+To see how you can add code snippets, see below:
+
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
+}
+``` -->
+
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+
+**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
 I was expecially intrigued on working on the grid section in the future. I suppose the section can designed to image from other sources and have it content change dynamically. 
 
+<!-- Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect. -->
 
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
@@ -104,3 +126,6 @@ I appreciate every developer who compile online solutions on websites where they
 
 I also appreciate Victor, he helped me with esnsuring the page uses correct dimensioning, use of html and CSS semantics, helped me correct some mistakes and remove some unneccessary part of the code. I also appreciate Bolu(fayemibolu2@gmail.com) also.
 
+<!-- This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit. -->
+
+**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

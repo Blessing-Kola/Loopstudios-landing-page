@@ -1,0 +1,679 @@
+@font-face {
+    font-family: "Alata";
+    src: url(font/Alata/Alata-Regular.ttf);
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url(font/Alata,Josefin_Sans/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+    font-style: normal;
+}
+
+
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Grey_200: hsl(0, 0%, 61%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+header {
+    display: block;
+    background-image: url("images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+
+.headerOverlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 35%;
+    z-index: 0;
+}
+
+.navbar {
+    min-height: 20%;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    margin: auto;
+    z-index: 100;
+    position: relative;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 0 24px;
+    margin: 8px;
+    display: inline;
+    font-family: "Alata";
+    transition: 1s ease;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+
+.hamMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 24px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white);
+    z-index: 1000;
+}
+
+.cta {
+    width: 55%;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: var(--white);
+    border: 2px solid white;
+    padding: 24px;
+    font-family: "Josefin";
+    font-size: 4rem;
+    font-weight: 200;
+    margin-left: 15%;
+    z-index: 2;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+}
+
+.vga {
+    display: block;
+    position: relative;
+    margin-top: 150px;
+    background-color: var(--white);
+}
+
+h2 {
+    color: var(--Black);
+    text-transform: uppercase;
+    font-family: "Josefin";
+    font-size: 2.7rem;
+    font-weight: 320;
+}
+
+p {
+    color: var(--Grey_200);
+    font-family: "Alata";
+    font-size: 0.8rem;
+    font-weight: 100;
+    width: 60%;
+}
+
+.callText {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    height: auto;
+    background-color: white;
+    padding: 5rem 0 0 5rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.vga img {
+    width: 65%;
+}
+
+
+#gridHeaderText {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 40%;
+}
+
+button {
+    font-family: 'Alata';
+    padding: 8px 32px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: var(--white);
+    background-color: var(--Black);
+    pointer-events: visible;
+    cursor: pointer;
+}
+
+.gridArea {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "images1 images2 images3 images4",
+        "images5 images6 images7 images8";
+    gap: 40px;
+    background-color: white;
+    margin: 80px 0 200px 0;
+    overflow: visible;
+}
+
+.images {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.gridImageOverlay {
+    height: 99%;
+    width: 99%;
+    position: absolute;
+    background-color: black;
+    opacity: 30%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.gridImageOverlay:hover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--white);
+    opacity: 60%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.section-2 {
+    margin-top: 200px;
+}
+
+.imgText {
+    text-transform: uppercase;
+    font-family: "Josefin";
+    font-size: 2rem;
+    font-weight: 250;
+    color: var(--white);
+    top: 70%;
+    position: absolute;
+    padding: 2rem;
+    z-index: 100;
+}
+
+.footer {
+    background-color: var(--Black);
+    height: 100%;
+    padding: 32px 80px 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 8px;
+}
+
+.footer ul a {
+    color: var(--white);
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    align-items: flex-end;
+    font-family: "Alata";
+    font-size: 0.9rem;
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 0 8px;
+    margin: 0 8px;
+    display: inline;
+}
+
+.footer ul a:hover {
+    text-decoration: underline;
+}
+
+.pagelinks {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.pagelinks:hover {
+    cursor: pointer;
+}
+
+.socialMedialogos {
+    width: 100%;
+    height: 100%;
+    float: right;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    gap: 2rem;
+}
+
+.socialMedialogo {
+    position: relative;
+    /* z-index: 1; */
+    cursor: pointer;
+}
+
+.footerImageOverlay {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    justify-content: baseline;
+}
+
+.footerImageOverlay:hover {
+    background-color: var(--Black);
+}
+
+.copyright p {
+    float: right;
+    grid-column: 2;
+    grid-row: 2;
+    width: auto;
+
+}
+
+/* Screen for smaller screen device */
+
+@media (min-width: 300px) and (max-width: 800px) {
+    header {
+        background-image: url("images/mobile/image-hero.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .headerOverlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        opacity: 20%;
+    }
+
+    .navbar {
+        min-height: 20%;
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 16px;
+        z-index: 100;
+        position: relative;
+    }
+
+    .logo {
+        width: auto;
+        z-index: 4;
+    }
+
+    .cta {
+        margin: 150px 0;
+        width: auto;
+        position: relative;
+    }
+
+    .hamMenu {
+        display: block;
+        z-index: 4;
+    }
+
+    .hamMenu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamMenu.active .bar:nth-child(1) {
+        transform: translateY(9px)rotate(45deg);
+    }
+
+    .hamMenu.active .bar:nth-child(3) {
+        transform: translateY(-9px)rotate(-45deg);
+    }
+
+    .links {
+        position: fixed;
+        left: -120%;
+        top: 0;
+        gap: 0;
+        padding: 100px 0 0 32px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--Black);
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        transition: 0.5s;
+        z-index: 4;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .links.active {
+        left: 0;
+        z-index: 3;
+    }
+
+    h1 {
+        border: 2px solid white;
+        padding: 24px;
+        font-family: "Josefin" sans-serif;
+        font-size: 3rem;
+        font-weight: 200;
+        margin: 5%;
+        padding: 24px;
+    }
+
+    main {
+        margin: auto;
+    }
+
+    .vga {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px auto;
+        background-color: var(--white);
+        width: 100;
+    }
+
+    .vgaImg {
+        width: 100%;
+    }
+
+    .callText {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        background-color: white;
+        padding: 1rem;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .headingtext {
+        width: 100%;
+
+    }
+
+    p {
+        text-align: center;
+        width: 100vb;
+    }
+
+    h2 {
+        color: var(--Black);
+        text-transform: uppercase;
+        font-family: "Josefin";
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    p {
+        color: var(--Grey_200);
+        font-family: "Alata";
+        font-size: 1.0rem;
+        font-weight: 100;
+        width: 60%;
+    }
+
+    .callText {
+        height: auto;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .vga img {
+        width: 100%;
+    }
+
+    #gridHeaderText {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 40%;
+    }
+
+    button {
+        font-family: 'Alata';
+        font-size: 1.2rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .gridArea {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 180px);
+        grid-template-areas:
+            "images1",
+            "images2",
+            "images3",
+            "images4",
+            "images5",
+            "images6",
+            "images7",
+            "images8";
+        gap: 20px;
+        background-color: white;
+        margin: 80px 0 120px 0;
+    }
+
+    .images {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .gridImageOverlay {
+        height: 99%;
+        width: 99%;
+        position: absolute;
+        background-color: black;
+        opacity: 30%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .gridImageOverlay:hover {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: var(--white);
+        opacity: 60%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .section-2 {
+        margin-top: 200px;
+    }
+
+    .imgText {
+        text-transform: uppercase;
+        font-family: "Josefin";
+        font-size: 2rem;
+        font-weight: 250;
+        color: var(--white);
+        top: 30%;
+        position: absolute;
+        z-index: 3;
+        width: 100px;
+    }
+
+
+    footer {
+        margin: auto;
+    }
+
+    .footer {
+        background-color: var(--Black);
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .logo2 {
+        display: flex;
+        justify-content: center;
+        grid-column: 1;
+        grid-row: 1;
+        margin: auto;
+    }
+
+    .logo2>img {
+        margin: auto;
+    }
+
+    .footer ul a {
+        color: var(--white);
+        width: 100%;
+        overflow: hidden;
+        text-decoration: none;
+        align-items: center;
+        font-family: "Alata";
+        font-size: 1.2rem;
+    }
+
+    .footer ul li {
+        list-style: none;
+        padding: 20px auto;
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer ul a:hover {
+        text-decoration: underline;
+    }
+
+    .pagelinks {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        margin: 16px;
+    }
+
+    .pagelinks:hover {
+        cursor: pointer;
+    }
+
+    .socialMedialogos {
+        width: 100%;
+        height: 100%;
+        float: right;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        grid-column: 1;
+        grid-row: 3;
+        position: relative;
+        gap: 2rem;
+    }
+
+    .socialMedialogo {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+    }
+
+    .footerImageOverlay {
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        justify-content: baseline;
+    }
+
+    .footerImageOverlay:hover {
+        background-color: var(--Black);
+    }
+
+    .copyright {
+        grid-column: 1;
+        grid-row: 4;
+        width: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}
